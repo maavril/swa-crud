@@ -33,10 +33,7 @@
     "regions": {
       "source": {
         "object": "dbo.regions",
-        "type": "table",
-        "key-fields": [
-          "region_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
@@ -62,10 +59,7 @@
     "countries": {
       "source": {
         "object": "dbo.countries",
-        "type": "table",
-        "key-fields": [
-          "country_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
@@ -91,10 +85,7 @@
     "locations": {
       "source": {
         "object": "dbo.locations",
-        "type": "table",
-        "key-fields": [
-          "location_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
@@ -120,10 +111,7 @@
     "jobs": {
       "source": {
         "object": "dbo.jobs",
-        "type": "table",
-        "key-fields": [
-          "job_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
@@ -149,10 +137,7 @@
     "departments": {
       "source": {
         "object": "dbo.departments",
-        "type": "table",
-        "key-fields": [
-          "department_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
@@ -178,10 +163,7 @@
     "employees": {
       "source": {
         "object": "dbo.employees",
-        "type": "table",
-        "key-fields": [
-          "employee_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
@@ -207,10 +189,7 @@
     "dependents": {
       "source": {
         "object": "dbo.dependents",
-        "type": "table",
-        "key-fields": [
-          "dependent_id"
-        ]
+        "type": "table"
       },
       "graphql": {
         "enabled": true,
