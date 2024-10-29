@@ -211,32 +211,6 @@
           ]
         }
       ]
-    },
-    "meteo": {
-      "source": {
-        "object": "dbo.meteo",
-        "type": "table"
-      },
-      "graphql": {
-        "enabled": true,
-        "type": {
-          "singular": "meteo",
-          "plural": "meteos"
-        }
-      },
-      "rest": {
-        "enabled": true
-      },
-      "permissions": [
-        {
-          "role": "anonymous",
-          "actions": [
-            {
-              "action": "*"
-            }
-          ]
-        }
-      ]
     }
   }
 }
