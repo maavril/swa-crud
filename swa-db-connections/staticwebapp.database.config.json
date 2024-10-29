@@ -10,7 +10,7 @@
   "runtime": {
     "rest": {
       "enabled": true,
-      "path": "/rest",
+      "path": "/api",
       "request-body-strict": true
     },
     "graphql": {
@@ -217,32 +217,6 @@
         "type": {
           "singular": "dependents",
           "plural": "dependents"
-        }
-      },
-      "rest": {
-        "enabled": true
-      },
-      "permissions": [
-        {
-          "role": "anonymous",
-          "actions": [
-            {
-              "action": "*"
-            }
-          ]
-        }
-      ]
-    },
-    "meteo": {
-      "source": {
-        "object": "dbo.meteo",
-        "type": "table"
-      },
-      "graphql": {
-        "enabled": true,
-        "type": {
-          "singular": "meteo",
-          "plural": "meteos"
         }
       },
       "rest": {
