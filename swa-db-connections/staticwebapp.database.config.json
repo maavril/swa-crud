@@ -241,7 +241,10 @@
     "rooms": {
       "source": {
         "object": "dbo.rooms",
-        "type": "table"
+        "type": "table",
+        "key-fields": [
+          "room_id"
+        ]
       },
       "graphql": {
         "enabled": true,
@@ -267,7 +270,10 @@
     "clients": {
       "source": {
         "object": "dbo.clients",
-        "type": "table"
+        "type": "table",
+        "key-fields": [
+          "client_mail"
+        ]
       },
       "graphql": {
         "enabled": true,
@@ -293,7 +299,10 @@
     "reservations": {
       "source": {
         "object": "dbo.reservations",
-        "type": "table"
+        "type": "table",
+        "key-fields": [
+          "reservation_id"
+        ]
       },
       "graphql": {
         "enabled": true,
@@ -314,7 +323,33 @@
             }
           ]
         }
-      ]
+      ],
+      "relationships": {
+        "clients": {
+          "cardinality": "one",
+          "target.entity": "clients",
+          "source.fields": [
+            "client_mail"
+          ],
+          "target.fields": [
+            "client_mail"
+          ],
+          "linking.source.fields": [],
+          "linking.target.fields": []
+        },
+        "rooms": {
+          "cardinality": "one",
+          "target.entity": "rooms",
+          "source.fields": [
+            "room_id"
+          ],
+          "target.fields": [
+            "room_id"
+          ],
+          "linking.source.fields": [],
+          "linking.target.fields": []
+        }
+      }
     }
   }
 }
